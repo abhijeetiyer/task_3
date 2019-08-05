@@ -1,0 +1,506 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background:#231F20;
+	
+	background-position:center;
+	font-family: 'Strait', sans-serif;
+	color:#fff;
+	font-size:20px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header{
+	position:fixed;
+	width:100%;
+	z-index:9;
+
+	
+}
+.navbar{
+	background-color:transparent;
+}
+.navbar-scroll{
+	transition: 0.2s all linear;
+    background: rgba(41,37,37, 0.9) !important;
+}
+.item-scroll{
+	transition: 0.2s all linear;
+	background:#fff;
+	
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;        
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1 ;} /* IE < 8 */
+
+.navbar > .nav{
+	width:50%;
+	/* display:inline-block; */
+	float:left;
+
+} 
+
+.logo{
+	font-size:30px;
+	padding-top:15px;
+	text-align:center;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.nav-item{
+	width:30.33%;
+	margin:0 auto;
+	border-radius:5px;
+	margin-left:2px;
+	float:left;
+	text-align:center;
+	padding:5px;}
+
+
+.nav-link{
+	float:left;
+	
+}
+.tab > .item{
+	
+	margin:0 auto;
+	float:left;
+	width:20%;
+	text-align:center;
+	padding:10px 0 10px;
+	
+
+	
+}
+.tab{
+	font-size:18px;
+	font-weight:900;
+}
+
+
+.logo > a{
+	text-decoration:none;
+	color:#fff;
+}
+.logo > a:hover{
+color:#000;
+transition:0.2s all linear;
+}
+.item > a{
+	text-decoration:none;
+	color:#FFF;	
+}
+.landing{
+	background:url('http://www.toca-ch.com/data/walls/36/22438347.jpg');
+	height:1000px;
+	background-position:center;
+	background-size:cover;
+	font-family: 'Kaushan Script', cursive;
+}
+.content{
+	
+	text-align:center;
+	padding:300px;
+	color:#fff;
+}
+.landing-header{
+	font-size:70px;
+}
+.landing-subheader{
+	
+	font-size:20px;
+}
+
+/* .wrapper{
+	text-align:center;
+	display:inline-block;
+	padding-left:10%;
+	float:left;
+} */
+
+/* .col{
+	margin:5px;
+	padding:20px;
+	width:300px;
+	height:90px;
+    float:left;
+    border:2px solid #000;   
+} */
+
+.wrapper{
+	
+	width:90%;
+    padding:50px;
+	margin:0 auto;
+	display:block;
+	font-size:20px;
+	
+}
+.col{
+	width:32%;
+	border-radius:4px;
+	float:left;
+	margin:5px;
+	background-size:cover;
+	background-position:center;
+	
+}
+.container{
+	padding:20px;
+}
+
+input[type='text'],textarea{
+text-decoration:none;
+width:51%;
+background:transparent;
+border-radius:6px;
+padding:9px;
+letter-spacing:0.5px;
+border:2px solid #FFF;
+color:#fff;
+outline:none;
+font-size:16px;
+font-family: 'Strait', sans-serif;
+
+}
+
+textarea:focus,input:focus{
+	border:2px solid #E85A4F;
+	color:#FFF;
+	transition:0.5s all linear;
+}
+.btn{
+	cursor:pointer;
+	font-size:15px;
+	border:2px solid #fff;
+	display:inline-block;
+	border-radius:5px;
+	text-decoration:none;
+	color:#fff;
+	background:transparent;
+	padding:10px 20px;
+	outline:none;
+}
+.btn:hover{
+	color:#E85A4F;
+	background:transparent;
+	border: 2px solid #E85A4F;
+	transition:0.2s all linear;
+}
+.content-header{
+padding:20px 5px;
+text-align:center; 
+font-size:30px;
+color:#E85A4F;
+}
+
+.button{
+	padding:15px 23px;
+    border:2px solid #fff;
+	font-family: 'Strait', sans-serif;
+	color:#fff;
+	font-weight:600;
+	
+}
+.item > a:hover{
+color:#ccc;
+transition:0.2s all linear;
+}
+.container > p{
+	padding-bottom:20px;
+	color:#fff;
+}
+.box{
+	box-shadow:2px 2px #000;
+}
+
+.content-left,.content-right{
+	font-size:20px;
+	width:45%;
+	margin:30px auto;
+	color:#fff;
+	padding:20px;
+	text-align:center;
+	display:inline-block;
+}
+.center{
+	width:50%;	
+	margin:0 auto;
+	text-align:center;
+}
+.field{
+	width:100%;
+	margin:0 auto;
+}
+.left{
+	width:14%;
+}
+.right{
+	width:20%;
+}
+.right ,.left{
+	padding:20px;
+	display:inline-block;
+}
+form{
+ padding:20px;
+}
+
+.icons{
+	font-size:2vh;
+}
+.icons:hover{
+	color:#E85A4F;
+transition:0.2s all linear;
+}
+
+.effect{
+	color:#E85A4F;
+
+transition:all 0.2s ease-in; 
+}
+.effect:hover{
+	color:#FFF;
+transition:0.2s all linear;
+}
+#map {
+	height: 50%;
+	width:100%;
+  }
+  #email-warning, #mobile-warning1,#mobile-warning2	,#message-warning{
+	  color:#C96567;
+	  display:none;
+  }
+
+  .display-result{
+	 display: none;
+	 float:left;
+  }
+  .result-heading{
+	  display:none;
+  }
+  .card{
+    position:relative;
+    margin:7px;
+    width: 30%;
+    float:left;
+    border-radius:4px;
+	/* border:1px solid #C5CBE3 ; */
+	background: url('http://www.toca-ch.com/data/walls/36/22438347.jpg');
+	background-position:center;
+	background-size:cover;
+	color:#fff;
+	outline:none;
+	box-shadow:2px 2px 2px #000;
+
+}
+
+.card-footer{
+    
+	padding-top:300px;
+	padding-left:20px;
+	text-align:center;
+	font-family: 'Strait', sans-serif;
+	
+	
+}
+.card-overlay{
+    position:absolute;
+    height:99%;
+    width:100%;
+    z-index:2;
+    border-radius:4px 4px 0px 0px;
+    max-width:100%;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    
+}
+.image-content{
+    height:100%;
+    /* border-radius:px; */
+    position:relative;
+    width:100%;
+}
+.image-content > img{
+    border-radius: 4px 4px 0px 0px;
+}
+.overlay-content{
+    position:absolute;
+    top:0%;
+    left:45%;
+    font-size:30px;
+    transition: 0.4s  ease-out;
+	opacity:0;
+	color:#FFF;
+}
+.card:hover .overlay-content{
+    top:30%;
+    opacity:1;
+    
+    
+}
+.contact{
+	float:left;
+	
+}
+
+.price-section{
+    padding:10px;
+	width:100%;
+	border-radius:5px;
+	border:2px solid #FFF;
+    background:transparent;
+	font-family: 'Strait', sans-serif;
+    color:#FFF;
+    font-size:18px;
+	outline:none;
+	text-decoration:none;
+
+}
+.price-section:hover{
+	color:#000;
+	background:#fff;
+	transition:0.5s all ease-in-out;
+}
+
+.cards{
+    padding-left:20px;
+    width:80%;
+    margin:0 auto;
+	padding-top:50px;
+	width:100%;
+
+}
+.card-content{
+    padding:4em;
+}
+.card-header{
+    padding:20px;
+	font-size:20px;
+	font-weight:700;
+	font-family: 'Strait', sans-serif;
+    
+
+}
+	
+.form{
+	float:left;
+
+}
+
+@media only screen and (max-width:1024px){
+	.col-content{
+		font-size:40px;
+	}
+	.content-header{
+		font-size:45px;
+	}
+	.nav-item{
+		display:none;
+	}
+
+	.logo{
+		padding:20px;
+		font-size:50px;
+	}
+	.second-nav{
+		display:none;
+	}
+	.col{
+		width:100%;
+	}
+	.content-left {
+		width:100%;
+	}
+	.content-right{
+		width:100%;
+	}
+	.center{
+		width:100%;
+	}
+	.cards{
+		width:100%;
+	}
+	.card{
+		width:100%;
+	}
+	.card-footer{
+		padding-top:500px;
+	}
+	.card-content{
+		font-size:50px;
+	}
+	.card-header{
+		font-size:60px;
+	}
+	.button{
+		font-size:35px;
+		width:100%;
+	}
+	.form{
+		font-size:35px;
+	}	
+	.icons{
+		font-size:50px;
+	}
+	.price-section{
+		font-size:40px;
+	}
+	input[type='text'],textarea{
+		font-size:30px;
+	}
+	
+}
+
+
