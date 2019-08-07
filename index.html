@@ -10,11 +10,15 @@
 	</style>
 </head>
 <body>
-	<header class="header">
+	
+	<header class="header">									
 		<nav class="navbar clearfix">
-		 <div class="nav logo"><a href="#">LOGO</a></div>
-			<div class="nav ">
-				<div class="nav-item">
+			<div class="nav logo">
+			 	<a href="#">LOGO</a>
+			</div>
+			<button class="menu-btn"><i class="fa fa-sliders fa-2x"></i></button>	
+			<div class="nav ">	
+				<div class="nav-item">						
 					<input type="text" name="search" placeholder="Search"/>
 					<button class="btn"><i class="fa fa-search fa-lg"></i></button>
 				</div>
@@ -26,23 +30,42 @@
 					<button  class="nav-link btn color-changer"><i class="fa fa-shopping-cart"></i></button>
 				</div>
 			</div>
-		    <div class="second-nav">
-				<ul class="tab" id='sec-tab'>
-				<li class="item"><a class='item-link' href="#"><i class="fa fa-home width "></i>HOME</a></li>
-				<li class="item"><a class='item-link' href="#"><i class="fa fa-tasks width"></i> SERVICES</a></li>
-				<li class="item"><a class='item-link' href="#"><i class="fa fa-product-hunt width"></i> PRODUCTS</a></li>
-				<li class="item"><a class='item-link' href="#"><i class="fa fa-id-card-o width"></i> ABOUT US</a></li> 
-				<li class="item"><a class='item-link' href="#"><i class="fa fa-phone width"></i> CONTACT</a></li>
-				</ul>
-		    </div>	
 		</nav>
 	</header>
+
+		
+	<div class="sidebar">
+		<button class="side-close btn"><i class="fa fa-caret-left fa-2x"></i></button>
+		<div class="brand side-item">
+			<div class="side-logo">
+				<a href="#" class="s-logo">LOGO</a>		
+			</div>
+		</div>
+		<div class="side-menu">
+			<div class="side-item"><a class='side-link' href="#"><i class="fa fa-home width fa-lg"></i> Home</a></div>
+			<div class="side-item"><a class='side-link' href="#"><i class="fa fa-tasks width fa-lg"></i> Services</a></div>
+			<div class="side-item"><a class='side-link' href="#"><i class="fa fa-product-hunt width fa-lg"></i> Product</a></div>
+			<div class="side-item"><a class='side-link' href="#"><i class="fa fa-id-card-o width fa-lg"></i> About</a></div>
+			<div class="side-item"><a class='side-link' href="#"><i class="fa fa-phone width fa-lg"></i> Contact</a></div>
+		</div>
+	</div>
+	
+	<button  class="nav-link btn menu-btn" style="display:none"><i class="fa fa-shopping-cart"></i></button>
 	<div class="landing">
-		<div class="content">
+		<div class="content">	
 			<h1 class="landing-header">This is our Website</h1>
 			<div class="landing-subheader">
 				This is a Subheader
 			</div>
+			<div class="second-nav">
+				<ul class="tab" id='sec-tab'>
+					<li class="item"><a class='item-link' href="#"><i class="fa fa-home width "></i></a></li>
+					<li class="item"><a class='item-link' href="#"><i class="fa fa-tasks width"></i></a></li>
+					<li class="item"><a class='item-link' href="#"><i class="fa fa-product-hunt width"></i></a></li>
+					<li class="item"><a class='item-link' href="#"><i class="fa fa-id-card-o width"></i></a></li> 
+					<li class="item"><a class='item-link' href="#"><i class="fa fa-phone width"></i></a></li>
+				</ul>
+			</div>	
 		</div>
 	</div>
 	<div class="wrapper">
@@ -108,38 +131,30 @@
 				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-			
-             
 		</section>
 		<div class="cards clearfix ">
-                
             <div class="card">
-                    
                 <div class="image-content">
-                        <div class="card-overlay">
-                           <div class="overlay-content">
-							   <i class="fa fa-spin fa-globe fa-4x"></i>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+						   <i class="fa fa-spin fa-globe fa-lg"></i>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="price-section">know More</a>
 							</div>
-							<div class="card-footer">
-									<a href="#" class="price-section">know More</a>
-								</div>
-                        </div>
-                        <img src="img/A45-by-Bjarke-Ingels-Group-7-889x667.jpg" alt="" style="width:100%;height:100%">  
-                </div>
-                <div class="card-content">
-                    
-                    <div class="card-header">CARD 1
-                        
                     </div>
-                    
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellendus!
+                    <img src="img/A45-by-Bjarke-Ingels-Group-7-889x667.jpg" alt="" style="width:100%;height:100%">  
+                </div>
+                <div class="card-content"> 
+                <div class="card-header">CARD 1</div>    
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellendus!
                 </div>
             </div>
             <div class="card">
                     <div class="image-content">
                             <div class="card-overlay">
                                <div class="overlay-content">
-								   <i class="fa fa-map-marker fa-4x"></i>
+								   <i class="fa fa-map-marker fa-lg"></i>
 								</div>
 								<div class="card-footer">
 										<a href="#" class="price-section">know More</a>
@@ -158,7 +173,7 @@
                     <div class="image-content">
                             <div class="card-overlay">
                                <div class="overlay-content">
-								   <i class="fa fa-camera-retro fa-4x"></i>
+								   <i class="fa fa-camera-retro fa-lg"></i>
 								</div>
 								<div class="card-footer">
 									<a href="#" class="price-section">know More</a>
@@ -179,7 +194,7 @@
                     <div class="image-content">
                             <div class="card-overlay">
                                <div class="overlay-content">
-								   <i class="fa fa-cloud fa-4x"></i>
+								   <i class="fa fa-cloud fa-lg"></i>
 								   
 								</div>
 								<div class="card-footer">
@@ -201,7 +216,7 @@
                     <div class="image-content">
                             <div class="card-overlay">
 							    <div class="overlay-content">
-								   <i class="fa fa-spin fa-sun-o fa-4x"></i>
+								   <i class="fa fa-spin fa-sun-o fa-lg"></i>
 								</div>
 								<div class="card-footer">
 									<a href="#" class="price-section">know More</a>
@@ -221,7 +236,7 @@
                     <div class="image-content">
                             <div class="card-overlay">
 							    <div class="overlay-content">
-									<i class="fa fa-map-o fa-4x"></i>
+									<i class="fa fa-map-o fa-lg"></i>
 								</div>
 								<div class="card-footer">
 										<a href="#" class="price-section">know More</a>
@@ -241,7 +256,7 @@
         </div> 
 		<footer>
 			<section class="contact wrapper">
-					<div class=" content-left box form">
+					<div class=" content-left  form">
 						<div class="content-header">CONTACT US</div>
 						<!-- <form id="contact-form" > -->
 							<div class="field">

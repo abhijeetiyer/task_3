@@ -1,32 +1,4 @@
-let colorChanger = document.querySelector('.color-changer');
-let body = document.querySelector('body');
-let nav = document.querySelector('.navbar');
-let tab = document.getElementsByClassName('item');
-let link = document.getElementsByClassName('item-link');
-const resultHeading = document.querySelector('.result-heading');
-// const result = document.querySelector('.display-result');
-const effect  = document.getElementsByClassName('.effect');
 
-colorChanger.addEventListener('click', changeColor);
-
-function changeColor(e){
-    body.style.backgroundColor = "#2D283E";
-    nav.style.backgroundColor = '#2D283E';
-  
-    
-    for (let index = 0; index < tab.length; index++) {
-        const element = tab[index];
-        element.style.backgroundColor = '#E27D60';
-    }
-    for (let index = 0; index < link.length; index++) {
-        const element = link[index];
-        element.style.color = '#000';
-        
-    }
-    
-
-    e.preventDefault();
-}
 
 
 // colorChanger.addEventListener('dbclick', resetColor);
@@ -154,13 +126,16 @@ function changeColor(e){
 // e.preventDefault();
     
 // }
-$('.color-changer').click(function(){
-    
-    $('.effect,.content-header').each(function(){
-        $(this).css('color','#E27D60');
+$('.menu-btn').off('click').on('click', function(){
+    $('.sidebar').animate({
+        width:"toggle"
     });
 });
-
+$('.side-close').off('click').on('click',function(){
+    $('.sidebar').animate({
+        width:"toggle"
+    });
+});
 $(window).scroll(function(){
     if($(this).scrollTop() > 0)
     {
